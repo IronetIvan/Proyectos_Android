@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EjemploInicial</string>
+    <string name="texto1">Bienvenido al primer ejemplo!</string>
+    <string name="boton1">Pulsar</string>
+    <string name="app_aviso">La proxima vez cierro</string>
+</resources>
