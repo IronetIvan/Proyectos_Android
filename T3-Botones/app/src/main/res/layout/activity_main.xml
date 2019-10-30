@@ -15,17 +15,31 @@
         style="@style/Widget.AppCompat.Button.Colored"/>
 
     <ImageButton
+        android:id="@+id/btnimagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/button_ok"
-        style="@style/Widget.AppCompat.Button.Borderless" />
+        style="@style/Widget.AppCompat.Button.Borderless"
+        tools:ignore="InvalidId" />
 
     <ToggleButton
+        android:id="@+id/toggleboton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
         android:background="@drawable/fondotog"/>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionado"
+        android:id="@+id/checknormal"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:id="@+id/switchnormal"/>
 
 
 </LinearLayout>
