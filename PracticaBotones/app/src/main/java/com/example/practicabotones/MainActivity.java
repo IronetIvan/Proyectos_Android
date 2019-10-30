@@ -40,6 +40,16 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
                 Intent aleatorio = new Intent(getApplicationContext(),AleatorioActivity.class);
                 startActivity(aleatorio);
                 break;
+
+            case R.id.btntrofeo:
+                Intent ganador = new Intent(getApplicationContext(),GanadorActivity.class);
+                startActivity(ganador);
+                break;
+
+            case R.id.btndados:
+                Intent dados = new Intent(getApplicationContext(),DadosActivity.class);
+                startActivity(dados);
+                break;
         }
     }
 }
