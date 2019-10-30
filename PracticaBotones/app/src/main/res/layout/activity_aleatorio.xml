@@ -108,11 +108,9 @@
             android:text="Repetir numeros"
             android:layout_marginRight="10dp"/>
 
-        <Button
-            android:text="Repetir"
+        <Switch
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
@@ -124,4 +122,11 @@
         android:layout_height="wrap_content"
         android:src="@drawable/cohete"
         style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <TextView
+        android:layout_margin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="Generador de Aleatorios"
+        android:textSize="30dp"/>
 </LinearLayout>
