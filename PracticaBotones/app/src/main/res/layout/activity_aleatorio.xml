@@ -20,6 +20,7 @@
         android:layout_marginTop="15dp">
 
         <RadioGroup
+            android:id="@+id/grupodecimales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -46,6 +47,7 @@
         android:layout_marginTop="10dp">
 
         <EditText
+            android:id="@+id/decimalminimo"
             android:hint="minimo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,6 +55,7 @@
             android:inputType="number"/>
 
         <EditText
+            android:id="@+id/decimalmaximo"
             android:hint="máximo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,12 +68,14 @@
         android:layout_marginTop="10dp">
 
         <CheckBox
+            android:id="@+id/checkpermitirdecimales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Permitir decimales"
             android:layout_marginRight="10dp"/>
 
         <EditText
+            android:id="@+id/numerosdecimales"
             android:hint="numeros de decimales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,6 +114,7 @@
             android:layout_marginRight="10dp"/>
 
         <Switch
+            android:id="@+id/switchrepetir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
