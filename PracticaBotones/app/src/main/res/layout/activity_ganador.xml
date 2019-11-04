@@ -5,12 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GanadorActivity"
-    android:gravity="center">
+    android:layout_margin="10dp"
+    android:orientation="vertical">
 
-    <TextView
-        android:textSize="30dp"
-        android:text="Pantalla Ganador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20dp"
+            android:text="Introdice nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nombre"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generar Ganador"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar concursante"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
 
 </LinearLayout>

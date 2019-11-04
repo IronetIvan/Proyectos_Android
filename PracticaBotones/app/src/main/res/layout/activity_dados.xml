@@ -5,12 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DadosActivity"
-    android:gravity="center">
+    android:layout_marginTop="40dp">
 
-    <TextView
-        android:textSize="30dp"
-        android:text="Pantalla Dados"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizar Tirada"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
