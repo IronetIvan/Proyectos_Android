@@ -2,6 +2,7 @@ package com.example.juegocartas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        
+        switch (v.getId()){
+            case R.id.empezar:
+                Intent empezar = new Intent(getApplicationContext(), SecondActivity.class);
+                startActivity(empezar);
+                break;
+        }
     }
 }
