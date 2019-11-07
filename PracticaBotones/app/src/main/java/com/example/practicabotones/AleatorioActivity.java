@@ -52,23 +52,18 @@ public class AleatorioActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()) {
-            case R.id.btncohete:
-                Toast.makeText(getApplicationContext(), "Boton de generar numeros pulsado", Toast.LENGTH_SHORT).show();
-                break;
-        }
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton compoundbutton, boolean b) {
 
 
     }
 
     @Override
-    public void onCheckedChanged(RadioGroup group, int i) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-        
+
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
 
     }
 }
