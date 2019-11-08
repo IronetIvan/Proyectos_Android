@@ -13,6 +13,7 @@ public class DadosActivity extends AppCompatActivity implements View.OnClickList
 
      Button tirada;
      ImageView dado;
+    int[]posibilidades = {R.drawable.dado_uno, R.drawable.dado_dos, R.drawable.dado_tres,R.drawable.dado_cuatro, R.drawable.dado_cinco, R.drawable.dado_seis};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,35 +37,10 @@ public class DadosActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
 
-        //int numero = (int) (Math.random() * 6) + 1;
-        //int[]posibilidades = {R.drawable.dado_uno, R.drawable.dado_dos, R.drawable.dado_tres,R.drawable.dado_cuatro, R.drawable.dado_cinco, R.drawable.dado_seis};
+        int numero = (int) (Math.random() * 6);
+        dado.setImageDrawable(getResources().getDrawable(posibilidades[numero], null));
+        dado.setImageResource(posibilidades[numero]);
 
-        //dado.setImageDrawable(getResources().getDrawable(R.drawable.dado_uno, null));
-        //dado.setImageResource(posibilidades[1]);
 
-        if (v == tirada){
-            int aleatorio = (int)(Math.random()*6)+1;
-
-            switch (aleatorio){
-                case 1:
-                    dado.setImageResource(R.drawable.dado_uno);
-                    break;
-                case 2:
-                    dado.setImageResource(R.drawable.dado_dos);
-                    break;
-                case 3:
-                    dado.setImageResource(R.drawable.dado_tres);
-                    break;
-                case 4:
-                    dado.setImageResource(R.drawable.dado_cuatro);
-                    break;
-                case 5:
-                    dado.setImageResource(R.drawable.dado_cinco);
-                    break;
-                case 6:
-                    dado.setImageResource(R.drawable.dado_seis);
-                    break;
-            }
-        }
     }
 }
