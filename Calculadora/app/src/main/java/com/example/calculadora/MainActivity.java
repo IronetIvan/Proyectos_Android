@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnum1, btnum2, btnum3, btnum4, btnum5, btnum6,
     btnum7, btnum8, btnum9, btnum0, btnsuma, btnresta,
     btnproducto, btndividir, btnreset, btnigual, btndecimal, btnlog, btnsen, btncos, btntan;
-    //as
+
     TextView MostrarResultado;
     double resultado;
     String operador, mostrar , reserva;
