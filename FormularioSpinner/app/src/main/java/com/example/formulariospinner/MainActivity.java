@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void rellenarEdades() {
         spinnerPersonas.setAdapter(adaptadorPersonas);
         spinnerEdad.setAdapter(adaptadorEdades);
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             edades.add(i);
             adaptadorEdades.notifyDataSetChanged();
         }
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         Persona persona = (Persona) adaptadorPersonas.getItem(i);
-        Toast.makeText(getApplicationContext(), persona.getNombre(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), persona.getNombre(), Toast.LENGTH_SHORT).show(); //hay personas en el Spinner
     }
 
     @Override
