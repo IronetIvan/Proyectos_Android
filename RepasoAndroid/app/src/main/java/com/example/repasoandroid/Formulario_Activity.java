@@ -75,7 +75,8 @@ public class Formulario_Activity extends AppCompatActivity implements View.OnCli
             }
             break;
         case R.id.boton_obtener:
-            Intent intent = new Intent(getApplicationContext(),)
+            Intent resultado = new Intent(getApplicationContext(),ResultadoActivity.class);
+            startActivity(resultado);
     }
     }
 }
