@@ -22,6 +22,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void acciones() {
+
         resultado.setOnClickListener(this);
     }
 
