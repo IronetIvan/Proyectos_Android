@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (adaptadorPersonas.getCount() > 0) {
                     Persona persona = (Persona) adaptadorPersonas.getItem(spinnerPersonas.getSelectedItemPosition());
                     Toast.makeText(getApplicationContext(), persona.getNombre(), Toast.LENGTH_SHORT).show();
+                    //añade persona al spinner
                 }
 
                 break;
