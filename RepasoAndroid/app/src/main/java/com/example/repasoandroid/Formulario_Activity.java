@@ -18,16 +18,13 @@ import com.example.repasoandroid.utils.Persona;
 import java.util.ArrayList;
 
 public class Formulario_Activity extends AppCompatActivity implements View.OnClickListener {
+
     TextView nombre, apellido, edad;
     EditText editNombre, editApellido;
     Button agregar, introducirEdad;
     Spinner spinnerEdad;
-    ArrayAdapter adaptEdades, adaptadorPersonas;
+    ArrayAdapter adaptEdades, adaptPersonas;
     ArrayList listaEdad, listaPersonas;
-
-    final static int REQ_COD =1; //codigo peticion
-    final static int REQ_COD_OK =0; //codigo respuesta
-    final static int REQ_COD_FAIL =1; //codigo respuesta
 
 
     @Override
@@ -35,8 +32,18 @@ public class Formulario_Activity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario_);
         instancias();
+        rellenarEdades();
         acciones();
     }
+
+    private void rellenarEdades() {
+        spinnerEdad.setAdapter(adaptEdades);
+        for (int i = 0; i < 81; i++) {
+            listaEdad.add(i); //llama al arrayList
+            adaptEdades.notifyDataSetChanged();
+        }
+    }
+
 
 
     private void instancias() {
@@ -51,7 +58,7 @@ public class Formulario_Activity extends AppCompatActivity implements View.OnCli
         listaEdad = new ArrayList();
         listaPersonas = new ArrayList();
         adaptEdades = new ArrayAdapter(getApplicationContext(),android.R.layout.simple_spinner_item, listaEdad);
-        adaptadorPersonas = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_spinner_item, listaPersonas);
+        adaptPersonas = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_spinner_item, listaPersonas);
     }
 
     private void acciones() {
@@ -77,6 +84,7 @@ public class Formulario_Activity extends AppCompatActivity implements View.OnCli
         case R.id.boton_obtener:
             Intent resultado = new Intent(getApplicationContext(),ResultadoActivity.class);
             startActivity(resultado);
+            finish();
     }
     }
 }
